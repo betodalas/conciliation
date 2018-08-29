@@ -87,7 +87,12 @@ include("auth.php");
 <p>Bem vindo <?php echo $_SESSION['username']; ?>!</p>
 <p>Esta é uma area segura</p>
 <p><b><a href="upload.php">Acessar</a></b></p>
-<b><a href="logout.php">Deslogar</a></b>
+<b><a href="logout.php">Deslogar</a></b><br><br>
+<b>Instruções</b><br><br>
+<p><b>1- </b>Match é quando a data e o valor do demonstrativo batem com o extrato.</p><br>
+<p><b>2- </b> Os campos que deram match estão na cor verde.</p><br>
+<p><b>3- </b> Os campos que não deram match, estão na cor amarela.</p></br>
+<p><b>4- </b> Na planilha de demonstrativos, o campo <b>E</b> são todas as datas que não deram match, o campo <b>F</b> é a soma dos valores referentes a esta data.</p>
 
 
 
@@ -175,7 +180,6 @@ include("auth.php");
 <!--===============================================================================================-->
 
 	<script src="js/main.js"></script>
-
 
 
 </body>
