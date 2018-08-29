@@ -61,11 +61,11 @@ highlight2.fill = PatternFill(fill_type='lightUp',
 
 highlight3 = NamedStyle(name="highlight3")
 highlight3.font = Font(bold=True, size=12)
-bd = Side(style='thick', color="000000")
+bd = Side(style='thin', color="000000")
 highlight3.border = Border(left=bd, top=bd, right=bd, bottom=bd)
 highlight3.fill = PatternFill(fill_type='lightUp',
-                             start_color='fff000',
-                             end_color='808080')
+                             start_color='ffffff',
+                             end_color='ffffff')
 
 print("\n")
 print("arquivos excel disponiveis nesta pasta:")
@@ -264,33 +264,51 @@ bankSheet["H1"].value = 'Soma saída'
 e_counter = 2
 
 userSheet["D1"].value = 'Entrada Data'
-userSheet["E1"].value = 'Entrada Valor'
+userSheet["E1"].value = 'Entrada Descricao'
+userSheet["F1"].value = 'Entrada Valor'
 
 userSheet["G1"].value = 'Soma valores de saida'
 x_counter = 2
 date_style = NamedStyle(name='datetime', number_format='DD/MM/YYYY')
 
+data_set = set()
+data_set2 = set()
 for row in range(2, userSheet.max_row + 1):
     DtcellObject = userSheet["A" + str(row)]
     #    ChcellObject = userSheet["B" + str(row)]        #get cell Object for every record found on column B of excel sheet
+    BmcellObject = userSheet["B" + str(row)]
     AmcellObject = userSheet["C" + str(row)]
     trio3 = (str(AmcellObject.value))
     campo_valor = AmcellObject.value
     campo_data = DtcellObject.value
+    campo_desc = BmcellObject.value
 
     for x in trio3:
         if '-' not in trio3:
             # create new sheet
-            DatesObject1 = userSheet["E" + str(x_counter)]
+            DatesObject1 = userSheet["F" + str(x_counter)]
             DatesObject1.value = campo_valor
             DatesObject2 = userSheet["D" + str(x_counter)]
             DatesObject2.value = campo_data
-            x_counter += 1
+            DatesObject3 = userSheet["E" + str(x_counter)]
+            DatesObject3.value = campo_desc
+
+            if campo_valor not in data_set2:
+                DatesObject1 = userSheet["F" + str(x_counter)]
+                DatesObject1.value = campo_valor
+
+                x_counter += 1
+                data_set2.add(campo_valor)
+
+
             AmcellObject.value = None
+            DtcellObject.value = None
+            BmcellObject.value = None
             AmcellObject.style = highlight3
+            BmcellObject.style = highlight3
+            DtcellObject.style = highlight3
 
-
-    # same as above for every record on column C of the excel file
+   # same as above for every record on column C of the excel file
 
     trio = (DtcellObject.value, reset(AmcellObject.value))
 
@@ -315,6 +333,9 @@ for row in range(2, userSheet.max_row + 1):
         for x in trio3:
             if '-' not in trio3:
                 AmcellObject.style = highlight3
+                DtcellObject.style = highlight3
+                BmcellObject.style = highlight3
+
 
 for row in range(2, bankSheet.max_row + 1):
 
@@ -344,10 +365,12 @@ for row in range(2, bankSheet.max_row + 1):
 
         # sheet = wb.active
 
-        DatesObject = bankSheet["E" + str(e_counter)]
-        DatesObject.value = campo_data
-        DatesObject.style = date_style
-        e_counter += 1
+        if campo_data not in data_set:
+            DatesObject = bankSheet["E" + str(e_counter)]
+            DatesObject.value = campo_data
+            DatesObject.style = date_style
+            e_counter += 1
+            data_set.add(campo_data)
 
         # wb.save("formula.xlsx")
 
