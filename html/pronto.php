@@ -3,11 +3,19 @@
 include("auth.php");
 ?>
 
+<?php
+        // Retrieve the hidden form variable (using PHP).
+        $wb_name = $_POST['wb_name'];
+        $b_sheet = $_POST['b_sheet'];
+        $u_sheet = $_POST['u_sheet'];
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
 
 <head>
+
 
 	<title>Login Odara</title>
 
@@ -64,18 +72,15 @@ include("auth.php");
 <body>
 
 	
-
 	<div class="limiter">
 
 		<div class="container-login100">
 
 			<div class="wrap-login100">
 
-				<form enctype="multipart/form-data" action="upload.php" method="POST">
-
 					<span class="login100-form-title p-b-26">
 
-						Bem vindo
+						Sucesso!!
 
 					</span>
 
@@ -84,8 +89,13 @@ include("auth.php");
 
 					</span>
 
-    <input type="file" name="uploaded_file"></input><br />
-    <input type="submit" value="upload"></input
+
+<b><p><center><a href="http://192.168.0.8/upload/<?php echo $wb_name ?>-conciliada.xlsx">Download planilha conciliada</a></p></b></center>
+						<span class="focus-input100" data-placeholder=""></span>
+
+
+
+
 
 
 						<span class="btn-show-pass">
@@ -95,6 +105,14 @@ include("auth.php");
 						</span>
 
 
+					</div>
+
+
+
+
+
+                                                <span class="focus-input100" data-placeholder=""></span>
+                                        </div>
 
 
 
@@ -105,7 +123,6 @@ include("auth.php");
 							<div class="login100-form-bgbtn"></div>
 
 					</div>
-
 
 						</div>
 
@@ -174,29 +191,15 @@ include("auth.php");
 	<script src="js/main.js"></script>
 
 
-
 </body>
 
-
-	
-
 </html>
-<?PHP
-  if(!empty($_FILES['uploaded_file']))
-  {
-    $path = "/var/www/html/upload/";
-    $path = $path . basename( $_FILES['uploaded_file']['name']);
-    if(move_uploaded_file($_FILES['uploaded_file']['tmp_name'], $path)) {
-      echo "O arquivo ".  basename( $_FILES['uploaded_file']['name']).
-      " carregado com sucesso";
-echo "<script language='javascript'>\n";
-  echo "alert('sucesso'); window.location.href='conciliacao.html';";
-  echo "</script>\n";
 
-
-    } else{
-        echo "Ocorreu um erro, tente novamente";
-    }
-  }
+<?php
+        // Retrieve the hidden form variable (using PHP).
+        $wb_name = $_POST['wb_name'];
+        $b_sheet = $_POST['b_sheet'];
+        $u_sheet = $_POST['u_sheet'];
+shell_exec("/usr/bin/python3 /var/www/cgi-bin/bank_recon.py > /tmp/teste.txt '$wb_name' '$b_sheet' '$u_sheet'");
 ?>
 

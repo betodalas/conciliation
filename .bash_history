@@ -1069,3 +1069,177 @@ ls
 cd /root/odara/odara/
 git status
 init 0
+cd /root/
+ls
+rm -r odara/
+ls
+rm -r  cgi-bin/ html/
+echo "# conciliation" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:betodalas/conciliation.git
+git push -u origin master
+ls
+cp -R /var/www/* .
+ls
+rm -r conciliacao.xlsx 
+ls
+git add .
+git commit -m "conciliacao"
+git push prigin master
+git push origin mster
+git push origin master
+cd /var/www/cgi-bin/
+ls
+rm bank_recon.2.py 
+rm bank_recon..py 
+rm bank_recon.3.py 
+cp bank_recon.py bank_recon.py.old
+ls
+cat bank_recon.py
+vim bank_recon.py
+echo > bank_recon.py
+vim bank_recon.py
+cd ..
+cd html/
+vim conciliacao.html 
+cd ..
+cd cgi-bin/
+vim bank_recon.py
+cp bank_recon.py /home/odara/odara/odara/cgi-bin/
+cd /root/
+ls
+cd cgi-bin/
+ls
+pwd
+ls
+pwd
+cp /var/www/cgi-bin/bank_recon.py .
+ls
+git sdtatus
+git status
+git add .
+git commit -m "conciliacao"
+git push origin master
+cat /root/.ssh/id_rsa.pub 
+git push origin master
+cat bank_recon.py 
+cd ..
+cd html/
+vim index.php 
+pwd
+cd /var/www/html/
+vim index.php 
+cp index.php /root/html/
+cd /root/html/
+git status
+git add .
+git commit -m "conciliacao"
+git push origin master
+init 0
+cd /var/www/
+ls
+cd html/
+cd ..
+cd cgi-bin/
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+cp /root/cgi-bin/bank_recon.py .
+vim bank_recon.py
+ls
+cd ..
+cd html/upload
+ls
+cd ..
+cdc ..
+cd ..
+cd cgi-bin/
+vim bank_recon.py
+ls
+cd ../html/upload
+ls
+cd ..
+cd cgi-bin/
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+cp /root/cgi-bin/bank_recon.py .
+vim bank_recon.py
+cd ..
+cd html/
+vim conciliacao.
+vim conciliacao.html 
+cd ..
+cd cgi-bin/
+ls
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+cd ../html/
+ls
+cd images/
+ls
+cd ..
+pwd
+src =  "image.png"
+sys.stdout.write("Content-Type: image/png\n")
+sys.stdout.write("Content-Length: " + str(os.stat(src).st_size) + "\n")
+sys.stdout.write("\n")
+sys.stdout.flush()
+vim bank_recon.py
+cd ..
+cd cgi-bin/
+ls
+vim bank_recon.py
+sys.stdout.write("Content-Length: " + str(os.stat(src).st_size) + "\n")
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+ls
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+ls
+cat helloworld.html 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+tail -f /var/log/apache2/error.log 
+vim bank_recon.py
+cp /root/cgi-bin/bank_recon.py .
+vim bank_recon.py
+init 0

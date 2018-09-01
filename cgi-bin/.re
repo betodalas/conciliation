@@ -23,11 +23,12 @@ import glob
 import cgi
 import html
 import cgitb;
+import requests
+import webbrowser
+from urllib.request import urlopen
 
 from openpyxl.utils import get_column_letter
-wb_name = sys.argv[1]
-b_sheet = sys.argv[2]
-u_sheet = sys.argv[3]
+
 cgitb.enable()
 from openpyxl import load_workbook
 
@@ -69,31 +70,28 @@ highlight3.fill = PatternFill(fill_type='lightUp',
                              start_color='ffffff',
                              end_color='ffffff')
 
-print("\n")
-print("arquivos excel disponiveis nesta pasta:")
-print("\n")
+#print("\n")
+#print("arquivos excel disponiveis nesta pasta:")
+#print("\n")
 
 # enum files in current directory
 # files = os.listdir('/home/roberto/PycharmProjects/odara/')
-files = os.listdir("/var/www/html/upload/")
+files = os.listdir('/var/www/html/upload/')
 i = 1
-for f in glob.glob("*.xlsx"):
-    print("(" + str(i) + "). " + str(f))
-    i += 1
+#for f in glob.glob("*.xlsx"):
+#    print("(" + str(i) + "). " + str(f))
+#print("\n")
+#print("Content-Type: text/html")  # HTTP header to say HTML is following
+#print()  # blank line, end of headers
 
-print("\n")
+form = cgi.FieldStorage()
+wb_name  = html.escape(form["wb_name"].value);
+u_sheet  = html.escape(form["u_sheet"].value);
+b_sheet  = html.escape(form["b_sheet"].value);
 
-print("Content-Type: text/html")  # HTTP header to say HTML is following
-print()  # blank line, end of headers
-
-#form = cgi.FieldStorage()
-#wb_name  = html.escape(form["wb_name"].value);
-#u_sheet  = html.escape(form["u_sheet"].value);
-#b_sheet  = html.escape(form["b_sheet"].value);
-
-print("Adicione o nome da planilha em a extensao:")
+#print("Adicione o nome da planilha em a extensao:")
 #wb_name = input()
-print("\n")
+#print("\n")
 # print(wb_name)
 # print(b_sheet)
 # print(u_sheet)
@@ -103,16 +101,16 @@ try:
 except IOError:
     print("arquivo nao encontrado")
     sys.exit()
-print("Eu encontrei as seguintes abas na planilha")
-print("\n")
+#print("Eu encontrei as seguintes abas na planilha")
+#print("\n")
 j = 1;
 for sheets in workBook.sheetnames:
-    print("(" + str(j) + "). " + str(sheets))
+#    print("(" + str(j) + "). " + str(sheets))
     j += 1
-print("\n")
-print("Informe o nome da primeira aba")
+#print("\n")
+#print("Informe o nome da primeira aba")
 #b_sheet = input()
-print("\n")
+#print("\n")
 try:
     bankSheet = workBook[b_sheet]
 except KeyError:
@@ -120,15 +118,15 @@ except KeyError:
     print("exitting....")
     sys.exit()
 
-print("Sucesso, dados encontrados " + b_sheet)
-print("\n")
-print("Informe o nome da outra aba")
+#print("Sucesso, dados encontrados " + b_sheet)
+#print("\n")
+#print("Informe o nome da outra aba")
 #u_sheet = input()
 try:
     userSheet = workBook[u_sheet]
-    print("\n")
-    print("Sucesso, dados encontrados nesta aba: " + u_sheet)
-    print("\n")
+#    print("\n")
+#    print("Sucesso, dados encontrados nesta aba: " + u_sheet)
+#    print("\n")
 except KeyError:
     print("Nao encontrei dados nesta aba " + wb_name + " xlsx.")
     sys.exit()
@@ -163,7 +161,6 @@ time.sleep(2)
 print("Conciliando ...")
 time.sleep(2)
 count = 0  # keep track of matches found
-
 
 # for row in range(2, userSheet.max_row + 1):
 #    ChcellObject = userSheet["B" + str(row)]        #get cell Object for every record found on column B of excel sheet
@@ -255,10 +252,6 @@ def reset(num):
 #        print("Y or N")
 
 
-print("processing your data....")
-time.sleep(2)
-print("finding matches...")
-time.sleep(2)
 count = 0  # keep track of matches found
 bankSheet["E1"].value = 'data'
 bankSheet["H1"].value = 'Soma saída'
@@ -314,7 +307,7 @@ for row in range(2, userSheet.max_row + 1):
     trio = (DtcellObject.value, reset(AmcellObject.value))
 
     if trio in trios:
-        print('Igual')
+#        print('Igual')
 
         DtcellObject.style = highlight
         #        ChcellObject.style = highlight
@@ -380,15 +373,15 @@ for row in range(2, bankSheet.max_row + 1):
     #         ChcellObject.style = highlight          # --do--
     #     count += 1
 
-print(str(count) + " matches found")
+#print(str(count) + " matches found")
 print("\n")
-print("hold on...")
+#print("hold on...")
 time.sleep(1)
-print("highlighting in process...")
+#print("highlighting in process...")
 time.sleep(2)
-print("SUCCESS:" + str(count) + " matches highlighted")
+#print("SUCCESS:" + str(count) + " matches highlighted")
 time.sleep(1)
-print("creating new file in your folder....")
+#print("creating new file in your folder....")
 time.sleep(1)
 bankSheet['F2'] = "=SUMIFS($C$2:$C$10000,$A$2:$A$10000,E2)"
 
@@ -399,8 +392,7 @@ userSheet['G2'] = "=SUM(C2:C1000)"
 workBook.save(
     '/var/www/html/upload/' + wb_name + '-conciliada' + '.xlsx')  # create new file with all the matched instance highlighted automatically
 print(wb_name + '-conciliacao' + '.xlsx'+ ' criado')
-
 time.sleep(2)
 time.sleep(2)
-print("Exiting...")
+#print("Exiting...")
 

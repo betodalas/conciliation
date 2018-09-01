@@ -3,6 +3,11 @@
 include("auth.php");
 ?>
 
+
+
+
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -71,7 +76,7 @@ include("auth.php");
 
 			<div class="wrap-login100">
 
-<form action="cgi-bin/bank_recon.py" method="post">
+<form action="pronto.php" method="post" enctype="multipart/form-data">
 					<span class="login100-form-title p-b-26">
 
 						Bem vindo
@@ -87,7 +92,7 @@ include("auth.php");
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
 
-                                                <input class="input100" type="text" name="wb_name" placeholder="Nome da Planilha" required />
+                                                <input class="input100" type="text" name="wb_name"  placeholder="Nome da Planilha" required />
 
 
 						<span class="focus-input100" data-placeholder=""></span>
@@ -104,9 +109,9 @@ include("auth.php");
 
 						</span>
 
-                                                <input class="input100" type="text" name="b_sheet" placeholder="" required />
+                                                <input class="input100" type="text" name="b_sheet" placeholder="Primeira aba" required />
 
-						<span class="focus-input100" data-placeholder="Primeira aba"></span>
+						<span class="focus-input100" data-placeholder=""></span>
 
 					</div>
 
@@ -197,13 +202,9 @@ include("auth.php");
 
 	<script src="js/main.js"></script>
 
-
-
 </body>
 
 </html>
-
-
 
 
 
