@@ -92,7 +92,17 @@ include("auth.php");
 <p><b>1- </b>Match é quando a data e o valor do demonstrativo batem com o extrato.</p><br>
 <p><b>2- </b> Os campos que deram match estão na cor verde.</p><br>
 <p><b>3- </b> Os campos que não deram match, estão na cor amarela.</p></br>
-<p><b>4- </b> Na planilha de demonstrativos, o campo <b>E</b> são todas as datas que não deram match, o campo <b>F</b> é a soma dos valores referentes a esta data.</p>
+<p><b>4- </b> Na planilha de demonstrativos, a coluna <b>E</b> contém todas as datas que não deram match, a coluna <b>F</b> é a soma dos valores referentes a esta data.</p><br>
+<p><b>5- </b> Na aba de extrato, contém alguns campos em branco, são os valores de entrada que estão nas colunas <b> D, E e F</b></p></br>
+<p><b>6- </b> As colunas pintadas precisam ser formatadas como data ou moeda para mostrar os valores corretos, clique com o botão direto em cima da coluna, formatar e depois data ou moeda em seu respectivo campo</p></br>
+<p><b>7- </b> IMPORTANTE: o demonstrativo de pagamento obrigatoriamente tem que ser na primeira aba e o extrato na segunda aba</p><br>
+<p><b>8- </b> Se você clicar para fazer download e dizer que o arquivo não existe, você digitou algum campo com o nome errado</p><br>
+
+
+
+
+
+
 
 
 

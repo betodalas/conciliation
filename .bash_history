@@ -1243,3 +1243,142 @@ vim bank_recon.py
 cp /root/cgi-bin/bank_recon.py .
 vim bank_recon.py
 init 0
+cd  /var/www/
+ls
+cd html/
+vim pronto.php 
+cd /tmp/
+ls
+cat teste.txt 
+cd /home/
+ls
+cd /var/www/
+ls
+cd html/
+ls
+cd upload
+ls
+cd ..
+vim conciliacao.xlsx 
+vim conciliacao.html 
+cd ..
+cd cgi-bin/
+vim bank_recon.py
+cat /tmp/teste.txt 
+vim bank_recon.py
+vim ../html/pronto.php 
+vim /var/www/cgi-bin/bank_recon.py
+cat /var/www/html/upload/
+cd /var/www/html/upload/
+ls
+vim /var/www/cgi-bin/bank_recon.py
+cd ..
+cat /tmp/teste.txt 
+ls -la /tmp/teste.txt 
+vim /var/www/cgi-bin/bank_recon.py
+cat /tmp/teste.txt 
+vim /var/www/cgi-bin/bank_recon.py
+vim /var/www/cgi-bin/bank_recon_new.py 
+vim /var/www/cgi-bin/bank_recon.py
+cat /tmp/teste.txt 
+ls
+cd upload
+ls
+ls -la
+tail -f /var/log/apache2/access.log 
+vim ../upload.php 
+ls
+ls -la
+find /* -name "DESPESAS*"
+ls -la /home/odara/odara/odara/html/cgi-bin/DESPESAS.xlsx
+ls -la /home/odara/odara/odara/DESPESAS.xlsx
+ls -la /home/gacanepa/odara/odara/html/cgi-bin/DESPESAS.xlsx
+ls -la /home/gacanepa/odara/odara/DESPESAS.xlsx
+ls -la /root/cgi-bin/DESPESAS.xlsx
+ls -la /var/www/html/upload/DESPESAS.xlsx
+ls -la /var/www/cgi-bin/DESPESAS.xlsx
+cd ..
+ls -la
+chown www-data.www-data *
+chown www-data.www-data * -R
+tail -f /var/log/apache2/access.log 
+df -h
+ls
+ls -la
+vim conciliacao.html 
+vim pronto.php 
+vim upload.
+vim upload.php 
+cat /tmp/teste.txt 
+l
+ls
+rm uploadDESPESAS.xlsx 
+ls
+vim upload.php 
+rm uploadDESPESAS.xlsx 
+vim upload.php 
+vim conciliacao.html 
+cd ..
+grep -R wb_name *
+cd html/
+ls
+grep -R upload *
+grep -R upload *|more
+vim upload.php 
+ls
+cd upload
+ls
+ls -la
+tail -f /var/log/apache2/access.log 
+cat /tmp/teste.txt 
+cd ..
+vim pronto.php 
+vim /var/www/cgi-bin/bank_recon.py
+rm uploadteste.xlsx 
+cat /tmp/teste.txt 
+ls
+cp upload/DESPESAS.xlsx .
+ls
+ls -la
+vim /var/www/cgi-bin/bank_recon.py
+vim pronto.php 
+ls
+ls -la
+cd upload
+ls -la
+cd ..
+vim pronto.php 
+vim conciliacao.html 
+cd ..
+cp -R * /root/
+cd /root/
+kls
+cd /root/
+git status
+git add .
+git commit -m "conciliacao"
+git push origin master
+df -h
+cd /var/www/
+cd html/upload
+ls -la
+ls -lah
+init 0
+cd /var/www/
+ls
+cd html/
+vim pronto.php 
+tail -f /var/log/apache2/access.log 
+tail -f /var/log/apache2/error.log 
+tail -f /var/log/apache2/access.log 
+vim pronto.php 
+vim conciliacao.html 
+vim pronto.php 
+vim conciliacao.html 
+vim pronto.php 
+tail -f /var/log/apache2/access.log 
+vim pronto.php 
+vim conciliacao.html 
+vim verifica.php
+vim pronto.php 
+vim index.php 

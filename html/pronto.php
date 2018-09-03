@@ -8,6 +8,7 @@ include("auth.php");
         $wb_name = $_POST['wb_name'];
         $b_sheet = $_POST['b_sheet'];
         $u_sheet = $_POST['u_sheet'];
+
 ?>
 
 <!DOCTYPE html>
@@ -90,7 +91,7 @@ include("auth.php");
 					</span>
 
 
-<b><p><center><a href="http://192.168.0.8/upload/<?php echo $wb_name ?>-conciliada.xlsx">Download planilha conciliada</a></p></b></center>
+<b><p><center><a href="http://192.168.0.8/upload/<?php echo $wb_name ?>-conciliada_<?php $date = date('d_m_Y_H_i');echo $date ?>.xlsx">Download planilha conciliada</a></p></b></center><br><b><p><center><a href="http://192.168.0.8">Início</a></p></b></center>
 						<span class="focus-input100" data-placeholder=""></span>
 
 
@@ -196,10 +197,9 @@ include("auth.php");
 </html>
 
 <?php
-        // Retrieve the hidden form variable (using PHP).
         $wb_name = $_POST['wb_name'];
         $b_sheet = $_POST['b_sheet'];
         $u_sheet = $_POST['u_sheet'];
-shell_exec("/usr/bin/python3 /var/www/cgi-bin/bank_recon.py > /tmp/teste.txt '$wb_name' '$b_sheet' '$u_sheet'");
-?>
+exec("/usr/bin/python3 /var/www/cgi-bin/bank_recon.py '$wb_name' '$b_sheet' '$u_sheet'");
 
+?>

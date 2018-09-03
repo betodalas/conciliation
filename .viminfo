@@ -8,17 +8,24 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/Prime
+~MSle0~/Nome
 
 # Command Line History (newest to oldest):
 :x
+:205
 :q!
 :q
+:204
+:94
 :Q
+:Q!
+:208
+:207
+:X
+:q1
 :a
 :Wq
 :74
-:Q!
 :98
 :95
 :92
@@ -33,7 +40,6 @@
 :252
 :104
 :qw
-:X
 :x!
 :239
 :240
@@ -55,14 +61,19 @@
 :160
 :chq
 :?
-:11
-:59
-:1
-:58
-:53
-:604
 
 # Search String History (newest to oldest):
+?/Nome
+?/shel
+?/she
+?/shee
+?/date
+?/192
+?/Ini
+?/Inici
+?/echo
+?/echio
+?/re
 ?/Prime
 ?/pro
 ?/Pronto
@@ -102,17 +113,6 @@
 ?/priont
 ?/read
 ?/print
-?/class
-?/33
-?/hfe
-?/ext
-?/enco
-?/Enco
-?/Info
-?/Igu
-?/igu
-?/igual
-?/Conci
 
 # Expression History (newest to oldest):
 
@@ -122,58 +122,90 @@
 
 # Registers:
 ""1	LINE	0
-	teste
-"2	LINE	0
-	teste
-"3	LINE	0
 	
+"2	LINE	0
+	}
+"3	LINE	0
+	    echo "PDF Created Successfully";
 "4	LINE	0
-	?>
+	else{
 "5	LINE	0
-	shell_exec("python3 /var/www/cgi-bin/bank_recon.py '$wb_name' '$b_sheet' '$u_sheet'");
+	}
 "6	LINE	0
-	        $u_sheet = $_POST['u_sheet'];
+	    echo "PDF not created";
 "7	LINE	0
-	        $b_sheet = $_POST['b_sheet'];
+	if($return_var != 0){ // exec is successful only if the $return_var was set to 0. !== means equal and identical, that is it is an integer and it also is zero.
 "8	LINE	0
-	        $wb_name = $_POST['wb_name'];
-"9	LINE	0
-	        // Retrieve the hidden form variable (using PHP).
-"-	CHAR	0
 	?>
+"9	LINE	0
+	
+"-	CHAR	0
+	d
 
 # File marks:
-'0  114  52  /var/www/html/conciliacao.html
-'1  83  14  /var/www/html/pronto.php
-'2  93  128  /var/www/html/pronto.php
-'3  11  1  /var/www/html/pronto.php
-'4  127  4  /var/www/html/pronto.php
-'5  400  0  /var/www/cgi-bin/bank_recon.py
-'6  78  34  /var/www/cgi-bin/bank_recon.py
-'7  203  77  /var/www/html/pronto.php
-'8  187  33  /var/www/html/upload.php
-'9  204  0  /var/www/html/conciliacao.html
+'0  95  149  /var/www/html/conciliacao.html
+'1  98  128  /var/www/html/index.php
+'2  205  0  /var/www/html/pronto.php
+'3  205  1  /var/www/html/pronto.php
+'4  203  110  /var/www/html/pronto.php
+'5  205  1  /var/www/html/pronto.php
+'6  205  10  /var/www/html/pronto.php
+'7  205  8  /var/www/html/pronto.php
+'8  33  17  /var/www/html/conciliacao.html
+'9  29  55  /var/www/cgi-bin/bank_recon.py
 
 # Jumplist (newest first):
--'  114  52  /var/www/html/conciliacao.html
+-'  95  149  /var/www/html/conciliacao.html
 -'  1  0  /var/www/html/conciliacao.html
--'  83  14  /var/www/html/pronto.php
+-'  98  128  /var/www/html/index.php
+-'  1  0  /var/www/html/index.php
+-'  205  0  /var/www/html/pronto.php
 -'  1  0  /var/www/html/pronto.php
--'  93  128  /var/www/html/pronto.php
--'  11  1  /var/www/html/pronto.php
--'  2  0  /var/www/html/pronto.php
--'  127  4  /var/www/html/pronto.php
--'  400  0  /var/www/cgi-bin/bank_recon.py
+-'  203  110  /var/www/html/pronto.php
+-'  33  17  /var/www/html/conciliacao.html
+-'  29  17  /var/www/html/conciliacao.html
+-'  29  55  /var/www/cgi-bin/bank_recon.py
+-'  27  21  /var/www/cgi-bin/bank_recon.py
 -'  1  0  /var/www/cgi-bin/bank_recon.py
--'  78  34  /var/www/cgi-bin/bank_recon.py
--'  90  34  /var/www/cgi-bin/bank_recon.py
+-'  94  104  /var/www/html/pronto.php
+-'  61  69  /var/www/html/pronto.php
+-'  192  0  /var/www/html/pronto.php
+-'  1  0  ../../cgi-bin/bank_recon.py
+-'  199  0  /var/www/html/pronto.php
+-'  402  0  /var/www/cgi-bin/bank_recon.py
+-'  42  0  /var/www/cgi-bin/bank_recon.py
+-'  90  62  /var/www/cgi-bin/bank_recon.py
+-'  410  0  /var/www/cgi-bin/bank_recon.py
+-'  391  0  /var/www/cgi-bin/bank_recon.py
+-'  32  0  /var/www/cgi-bin/bank_recon.py
+-'  404  74  /var/www/cgi-bin/bank_recon.py
+-'  1  0  /var/www/html/upload/bank_recon.py
+-'  28  0  /var/www/cgi-bin/bank_recon.py
+-'  30  0  /var/www/cgi-bin/bank_recon.py
+-'  175  0  /var/www/cgi-bin/bank_recon.py
+-'  1  0  /var/www/html/excel.php
+-'  97  6  /var/www/html/index.php
+-'  81  0  /var/www/html/index.php
+-'  1  0  /var/www/html/verifica.php
+-'  5  0  /var/www/html/conciliacao.html
+-'  204  0  /var/www/html/conciliacao.html
+-'  93  0  /var/www/html/pronto.php
+-'  202  36  /var/www/html/pronto.php
+-'  132  0  /var/www/html/conciliacao.html
+-'  200  0  /var/www/html/pronto.php
+-'  91  3  /var/www/html/pronto.php
+-'  12  0  /var/www/html/pronto.php
+-'  114  52  /var/www/html/conciliacao.html
+-'  84  14  /var/www/html/pronto.php
+-'  2  0  /var/www/html/pronto.php
+-'  128  4  /var/www/html/pronto.php
+-'  82  34  /var/www/cgi-bin/bank_recon.py
+-'  94  34  /var/www/cgi-bin/bank_recon.py
 -'  16  0  /var/www/cgi-bin/bank_recon.py
--'  203  77  /var/www/html/pronto.php
 -'  187  33  /var/www/html/upload.php
 -'  185  21  /var/www/html/upload.php
 -'  88  32  /var/www/html/upload.php
 -'  1  0  /var/www/html/upload.php
--'  204  0  /var/www/html/conciliacao.html
 -'  74  48  /var/www/html/upload.php
 -'  190  45  /var/www/html/upload.php
 -'  189  35  /var/www/html/upload.php
@@ -186,79 +218,47 @@
 -'  97  3  /var/www/cgi-bin/bank_recon_new.py
 -'  2  0  /var/www/cgi-bin/bank_recon_new.py
 -'  1  0  /var/www/cgi-bin/bank_recon_new.py
--'  92  24  /var/www/cgi-bin/bank_recon.py
+-'  96  24  /var/www/cgi-bin/bank_recon.py
 -'  4  0  /var/www/cgi-bin/bank_recon.py
--'  370  0  /var/www/cgi-bin/bank_recon.py
--'  97  15  /var/www/cgi-bin/bank_recon.py
--'  73  7  /var/www/cgi-bin/bank_recon.py
--'  43  23  /var/www/cgi-bin/bank_recon.py
+-'  374  0  /var/www/cgi-bin/bank_recon.py
+-'  101  15  /var/www/cgi-bin/bank_recon.py
+-'  77  7  /var/www/cgi-bin/bank_recon.py
+-'  47  23  /var/www/cgi-bin/bank_recon.py
 -'  86  0  /var/www/html/conciliacao.html
 -'  1  0  /var/www/html/conciliacao.xlsx
--'  205  0  /var/www/html/pronto.php
--'  48  0  /var/www/html/pronto.php
--'  193  0  /var/www/html/pronto.php
+-'  49  0  /var/www/html/pronto.php
+-'  194  0  /var/www/html/pronto.php
 -'  462  18  /etc/php/7.0/apache2/php.ini
 -'  410  2  /etc/php/7.0/apache2/php.ini
 -'  392  2  /etc/php/7.0/apache2/php.ini
 -'  448  28  /etc/php/7.0/apache2/php.ini
 -'  1  0  /etc/php/7.0/apache2/php.ini
--'  30  17  /var/www/cgi-bin/bank_recon.py
+-'  34  17  /var/www/cgi-bin/bank_recon.py
 -'  1  0  /var/www/cgi-bin/pronto.php
--'  119  49  /var/www/cgi-bin/bank_recon.py
--'  102  38  /var/www/cgi-bin/bank_recon.py
--'  95  1  /var/www/cgi-bin/bank_recon.py
--'  28  0  /var/www/cgi-bin/bank_recon.py
--'  401  6  /var/www/cgi-bin/bank_recon.py
--'  133  45  /var/www/cgi-bin/bank_recon.py
--'  52  0  /var/www/cgi-bin/bank_recon.py
+-'  123  49  /var/www/cgi-bin/bank_recon.py
+-'  106  38  /var/www/cgi-bin/bank_recon.py
+-'  99  1  /var/www/cgi-bin/bank_recon.py
+-'  405  6  /var/www/cgi-bin/bank_recon.py
+-'  137  45  /var/www/cgi-bin/bank_recon.py
+-'  56  0  /var/www/cgi-bin/bank_recon.py
 -'  121  90  /var/www/html/conciliacao.html
--'  89  1  /var/www/cgi-bin/bank_recon.py
--'  29  9  /var/www/cgi-bin/bank_recon.py
+-'  93  1  /var/www/cgi-bin/bank_recon.py
+-'  33  9  /var/www/cgi-bin/bank_recon.py
 -'  299  318  /etc/php/7.0/apache2/php.ini
 -'  1853  66  /etc/php/7.0/apache2/php.ini
 -'  1262  58  /etc/php/7.0/apache2/php.ini
 -'  748  45  /etc/php/7.0/apache2/php.ini
 -'  626  14  /etc/php/7.0/apache2/php.ini
 -'  368  4  /etc/php/7.0/apache2/php.ini
--'  366  21  /etc/php/7.0/apache2/php.ini
--'  365  10  /etc/php/7.0/apache2/php.ini
--'  316  39  /etc/php/7.0/apache2/php.ini
--'  298  31  /etc/php/7.0/apache2/php.ini
--'  194  12  /etc/php/7.0/apache2/php.ini
--'  177  5  /etc/php/7.0/apache2/php.ini
--'  1  0  /var/www/html/bank_recon.py
--'  9  0  /var/www/cgi-bin/bank_recon.py
--'  74  46  /var/www/html/pronto.php
--'  1  0  /var/www/html/upload/pronto.php
--'  12  11  /var/www/html/pronto.php
--'  111  0  /var/www/cgi-bin/bank_recon.py
--'  129  0  /var/www/html/pronto.php
--'  109  0  /var/www/html/pronto.php
--'  98  0  /var/www/html/pronto.php
--'  75  1  /var/www/html/pronto.php
--'  19  0  /var/www/html/pronto.php
--'  97  0  /var/www/html/pronto.php
--'  96  0  /var/www/html/conciliacao.html
--'  95  48  /var/www/html/conciliacao.html
--'  205  0  /var/www/html/conciliacao.html
--'  79  37  /var/www/html/conciliacao.html
--'  10  0  /var/www/html/conciliacao.html
--'  6  0  /var/www/html/conciliacao.html
--'  51  0  /var/www/html/conciliacao.html
--'  166  0  /var/www/html/conciliacao.html
--'  104  2  /var/www/html/conciliacao.html
--'  60  0  /var/www/html/conciliacao.html
--'  9  0  /var/www/html/conciliacao.html
--'  210  0  /var/www/html/conciliacao.html
--'  211  0  /var/www/html/conciliacao.html
--'  131  41  /var/www/html/conciliacao.html
+-'  205  0  /var/www/html/pronto.php
+-'  1  0  /var/www/html/pronto.php
 
 # History of marks within files (newest to oldest):
 
 > /var/www/html/conciliacao.html
-	"	114	52
-	^	114	53
-	.	114	53
+	"	95	149
+	^	95	150
+	.	95	149
 	+	211	26
 	+	211	0
 	+	211	14
@@ -314,190 +314,335 @@
 	+	205	0
 	+	112	123
 	+	114	53
+	+	95	149
+
+> /var/www/html/index.php
+	"	98	128
+	^	98	129
+	.	99	127
+	+	279	0
+	+	326	0
+	+	274	11
+	+	263	0
+	+	269	38
+	+	269	20
+	+	269	5
+	+	269	0
+	+	269	6
+	+	271	1
+	+	271	1
+	+	271	1
+	+	271	0
+	+	269	0
+	+	269	0
+	+	264	0
+	+	265	6
+	+	264	42
+	+	265	16
+	+	269	0
+	+	269	43
+	+	264	19
+	+	269	44
+	+	265	16
+	+	267	7
+	+	266	53
+	+	269	0
+	+	265	17
+	+	263	30
+	+	262	10
+	+	264	53
+	+	199	21
+	+	199	7
+	+	199	0
+	+	199	33
+	+	199	0
+	+	199	0
+	+	199	0
+	+	199	0
+	+	199	0
+	+	199	0
+	+	199	84
+	+	199	0
+	+	199	0
+	+	199	46
+	+	199	0
+	+	199	0
+	+	197	7
+	+	90	33
+	+	87	0
+	+	91	0
+	+	114	0
+	+	91	0
+	+	91	0
+	+	91	0
+	+	108	0
+	+	116	0
+	+	125	0
+	+	1	0
+	+	143	0
+	+	199	0
+	+	115	0
+	+	89	41
+	+	90	32
+	+	194	25
+	+	91	2
+	+	90	47
+	+	91	23
+	+	92	8
+	+	91	26
+	+	95	0
+	+	93	6
+	+	94	6
+	+	95	6
+	+	93	62
+	+	94	70
+	+	93	66
+	+	94	75
+	+	95	136
+	+	92	88
+	+	95	160
+	+	92	88
+	+	95	104
+	+	92	82
+	+	93	59
+	+	94	67
+	+	95	170
+	+	194	0
+	+	95	170
+	+	95	68
+	+	95	173
+	+	95	0
+	+	96	144
+	+	96	132
+	+	95	115
+	+	97	211
+	+	96	6
+	+	97	6
+	+	98	134
+	+	99	127
 
 > /var/www/html/pronto.php
-	"	83	14
-	^	83	15
-	.	83	14
-	+	206	0
-	+	206	0
-	+	206	0
-	+	1	0
-	+	81	0
-	+	93	0
-	+	100	0
-	+	107	0
-	+	111	0
-	+	112	0
-	+	124	0
-	+	206	0
-	+	98	2
-	+	98	35
-	+	98	0
-	+	98	4
-	+	98	0
-	+	98	0
-	+	98	0
-	+	98	13
-	+	98	0
-	+	98	0
+	"	205	0
+	^	204	0
+	.	205	0
+	+	130	44
+	+	130	26
+	+	130	15
+	+	130	15
+	+	130	15
+	+	130	27
+	+	130	27
+	+	130	0
+	+	13	2
+	+	13	67
+	+	13	12
 	+	13	0
-	+	98	0
-	+	98	0
-	+	98	0
-	+	98	0
-	+	98	0
-	+	97	0
-	+	19	0
-	+	19	0
+	+	75	2
+	+	75	47
+	+	75	46
 	+	75	0
-	+	75	25
-	+	75	0
-	+	75	0
-	+	98	0
-	+	75	0
-	+	129	2
-	+	129	8
-	+	129	14
-	+	129	14
-	+	129	0
-	+	129	0
-	+	129	44
-	+	129	26
-	+	129	15
-	+	129	15
-	+	129	15
-	+	129	27
-	+	129	27
-	+	129	0
-	+	12	2
-	+	12	67
-	+	12	12
+	+	194	2
+	+	194	93
+	+	194	0
+	+	194	0
+	+	194	0
+	+	205	3
+	+	205	77
+	+	128	0
+	+	94	82
+	+	12	1
+	+	94	10
+	+	94	126
+	+	94	2
+	+	94	128
+	+	84	14
+	+	94	190
+	+	11	0
+	+	12	21
+	+	12	1
 	+	12	0
-	+	74	2
-	+	74	47
-	+	74	46
-	+	74	0
-	+	193	2
-	+	193	93
-	+	193	0
-	+	193	0
-	+	193	0
-	+	204	2
-	+	203	76
-	+	127	0
-	+	93	82
-	+	11	1
-	+	93	10
-	+	93	126
-	+	93	2
-	+	93	128
-	+	83	14
+	+	205	2
+	+	202	37
+	+	200	0
+	+	205	1
+	+	200	13
+	+	200	23
+	+	200	17
+	+	205	101
+	+	205	1
+	+	200	0
+	+	205	1
+	+	205	1
+	+	205	23
+	+	205	108
+	+	205	1
+	+	205	38
+	+	205	60
+	+	205	24
+	+	205	35
+	+	205	8
+	+	205	1
+	+	205	1
+	+	205	1
+	+	205	1
+	+	203	0
+	+	203	24
+	+	205	6
+	+	205	1
+	+	203	28
+	+	203	100
+	+	205	7
+	+	205	1
+	+	205	1
+	+	203	0
+	+	203	1
+	+	203	112
+	+	205	14
+	+	205	16
+	+	203	0
+	+	205	1
+	+	203	0
+	+	203	112
+	+	94	183
+	+	94	0
+	+	94	0
+	+	94	112
+	+	203	3
+	+	205	8
+	+	205	9
+	+	205	10
+	+	205	1
+	+	203	0
+	+	203	112
+	+	205	0
+	+	203	93
+	+	203	0
+	+	203	89
+	+	205	0
+	+	205	0
+	+	205	159
+	+	205	0
+	+	205	15
+	+	203	87
+	+	205	0
 
 > /var/www/cgi-bin/bank_recon.py
-	"	400	0
-	^	78	41
-	.	78	40
-	+	107	0
-	+	396	42
-	+	386	0
-	+	399	0
-	+	396	43
-	+	86	0
-	+	87	0
-	+	396	49
-	+	88	0
-	+	97	0
-	+	108	0
-	+	113	0
-	+	116	0
-	+	78	89
-	+	78	11
-	+	78	85
-	+	78	0
-	+	75	0
-	+	78	0
-	+	78	73
-	+	78	14
-	+	78	0
-	+	399	0
-	+	399	0
-	+	399	21
+	"	29	55
+	^	29	56
+	.	29	55
+	+	91	0
+	+	400	49
+	+	92	0
+	+	101	0
+	+	112	0
+	+	117	0
+	+	120	0
+	+	82	89
+	+	82	11
+	+	82	85
+	+	82	0
+	+	79	0
+	+	82	0
+	+	82	73
+	+	82	14
+	+	82	0
+	+	403	0
+	+	403	0
+	+	403	21
 	+	26	15
-	+	399	15
-	+	27	26
-	+	399	0
-	+	399	0
-	+	399	0
-	+	399	0
-	+	399	33
-	+	27	0
-	+	28	34
-	+	399	0
-	+	399	0
-	+	399	0
-	+	399	46
-	+	399	0
-	+	399	0
-	+	399	21
-	+	399	20
-	+	399	11
-	+	399	0
-	+	399	0
-	+	399	24
-	+	399	13
+	+	403	15
+	+	31	26
+	+	403	0
+	+	403	0
+	+	403	0
+	+	403	0
+	+	403	33
+	+	31	0
+	+	32	34
+	+	403	0
+	+	403	0
+	+	403	0
+	+	403	46
+	+	403	0
+	+	403	0
+	+	403	21
+	+	403	20
+	+	403	11
+	+	403	0
+	+	403	0
+	+	403	24
+	+	403	13
 	+	24	0
 	+	23	0
 	+	24	0
-	+	87	14
-	+	87	31
-	+	87	9
-	+	87	0
-	+	27	0
-	+	87	17
-	+	87	48
-	+	87	17
-	+	87	0
-	+	87	0
-	+	87	0
-	+	87	33
-	+	87	23
-	+	167	0
-	+	167	0
-	+	80	0
-	+	399	0
-	+	80	0
-	+	80	0
-	+	80	0
-	+	80	0
-	+	399	0
-	+	130	0
-	+	132	0
-	+	87	0
-	+	89	0
-	+	89	0
-	+	89	0
-	+	125	0
-	+	86	0
-	+	86	0
-	+	79	0
-	+	78	32
-	+	79	0
-	+	79	0
-	+	79	0
-	+	399	14
-	+	401	52
-	+	213	0
-	+	89	0
-	+	90	0
+	+	91	14
+	+	91	31
+	+	91	9
 	+	91	0
-	+	92	0
-	+	29	20
-	+	30	19
-	+	28	17
-	+	29	17
-	+	30	17
-	+	78	40
+	+	31	0
+	+	91	17
+	+	91	48
+	+	91	17
+	+	91	0
+	+	91	0
+	+	91	0
+	+	91	33
+	+	91	23
+	+	171	0
+	+	171	0
+	+	84	0
+	+	403	0
+	+	84	0
+	+	84	0
+	+	84	0
+	+	84	0
+	+	403	0
+	+	134	0
+	+	136	0
+	+	91	0
+	+	93	0
+	+	93	0
+	+	93	0
+	+	129	0
+	+	90	0
+	+	90	0
+	+	83	0
+	+	82	32
+	+	83	0
+	+	83	0
+	+	83	0
+	+	403	14
+	+	405	52
+	+	217	0
+	+	93	0
+	+	94	0
+	+	95	0
+	+	96	0
+	+	33	20
+	+	34	19
+	+	32	17
+	+	33	17
+	+	34	17
+	+	82	40
+	+	26	15
+	+	29	67
+	+	30	0
+	+	404	75
+	+	27	29
+	+	29	55
+
+> ../../cgi-bin/bank_recon.py
+	"	1	0
+
+> /var/www/html/upload/bank_recon.py
+	"	1	0
+
+> /var/www/html/excel.php
+	"	1	0
+	^	1	0
+
+> /var/www/html/verifica.php
+	"	1	0
 
 > /var/www/html/upload.php
 	"	187	33
@@ -732,111 +877,6 @@
 
 > /var/www/html/conciliacao.
 	"	1	0
-
-> /var/www/html/index.php
-	"	184	0
-	^	96	0
-	.	184	0
-	+	452	0
-	+	454	0
-	+	454	0
-	+	453	0
-	+	316	34
-	+	329	0
-	+	2	5
-	+	189	0
-	+	314	7
-	+	251	18
-	+	268	6
-	+	251	0
-	+	269	0
-	+	316	0
-	+	264	11
-	+	253	0
-	+	259	38
-	+	259	20
-	+	259	5
-	+	259	0
-	+	259	6
-	+	261	1
-	+	261	1
-	+	261	1
-	+	261	0
-	+	259	0
-	+	259	0
-	+	254	0
-	+	255	6
-	+	254	42
-	+	255	16
-	+	259	0
-	+	259	43
-	+	254	19
-	+	259	44
-	+	255	16
-	+	257	7
-	+	256	53
-	+	259	0
-	+	255	17
-	+	253	30
-	+	252	10
-	+	254	53
-	+	189	21
-	+	189	7
-	+	189	0
-	+	189	33
-	+	189	0
-	+	189	0
-	+	189	0
-	+	189	0
-	+	189	0
-	+	189	0
-	+	189	84
-	+	189	0
-	+	189	0
-	+	189	46
-	+	189	0
-	+	189	0
-	+	187	7
-	+	90	33
-	+	87	0
-	+	91	0
-	+	104	0
-	+	91	0
-	+	91	0
-	+	91	0
-	+	98	0
-	+	106	0
-	+	115	0
-	+	1	0
-	+	133	0
-	+	189	0
-	+	105	0
-	+	89	41
-	+	90	32
-	+	184	25
-	+	91	2
-	+	90	47
-	+	91	23
-	+	92	8
-	+	91	26
-	+	95	0
-	+	93	6
-	+	94	6
-	+	95	6
-	+	93	62
-	+	94	70
-	+	93	66
-	+	94	75
-	+	95	136
-	+	92	88
-	+	95	160
-	+	92	88
-	+	95	104
-	+	92	82
-	+	93	59
-	+	94	67
-	+	95	170
-	+	184	0
 
 > ~/html/index.php
 	"	180	0
