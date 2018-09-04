@@ -268,11 +268,11 @@ bankSheet["E1"].value = 'data'
 bankSheet["H1"].value = 'Soma saída'
 e_counter = 2
 
-userSheet["D1"].value = 'Entrada Data'
-userSheet["E1"].value = 'Entrada Descricao'
-userSheet["F1"].value = 'Entrada Valor'
+userSheet["E1"].value = 'Entrada Data'
+userSheet["F1"].value = 'Entrada Descricao'
+userSheet["G1"].value = 'Entrada Valor'
 
-userSheet["G1"].value = 'Soma valores de saida'
+userSheet["H1"].value = 'Soma valores de saida'
 x_counter = 2
 date_style = NamedStyle(name='datetime', number_format='DD/MM/YYYY')
 
@@ -291,15 +291,15 @@ for row in range(2, userSheet.max_row + 1):
     for x in trio3:
         if '-' not in trio3:
             # create new sheet
-            DatesObject1 = userSheet["F" + str(x_counter)]
+            DatesObject1 = userSheet["G" + str(x_counter)]
             DatesObject1.value = campo_valor
-            DatesObject2 = userSheet["D" + str(x_counter)]
+            DatesObject2 = userSheet["E" + str(x_counter)]
             DatesObject2.value = campo_data
-            DatesObject3 = userSheet["E" + str(x_counter)]
+            DatesObject3 = userSheet["F" + str(x_counter)]
             DatesObject3.value = campo_desc
 
             if campo_valor not in data_set2:
-                DatesObject1 = userSheet["F" + str(x_counter)]
+                DatesObject1 = userSheet["G" + str(x_counter)]
                 DatesObject1.value = campo_valor
 
                 x_counter += 1
@@ -398,7 +398,7 @@ bankSheet['F2'] = "=SUMIFS($C$2:$C$10000,$A$2:$A$10000,E2)"
 
 bankSheet['H2'] = "=SUM(C2:C1000)"
 
-userSheet['G2'] = "=SUM(C2:C1000)"
+userSheet['H2'] = "=SUM(C2:C1000)"
 
 workBook.save(
     '/var/www/html/upload/' + wb_name + '-conciliada' + '_' + datestring + '.xlsx')  # create new file with all the matched instance highlighted automatically

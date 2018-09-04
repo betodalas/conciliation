@@ -1382,3 +1382,63 @@ vim conciliacao.html
 vim verifica.php
 vim pronto.php 
 vim index.php 
+cd /var/www/
+ls
+cd html/
+vim excel.php
+ls
+cd ..
+cd cgi-bin/
+vim bank_recon.py
+tail -f /var/log/apache2/access.log 
+tail -f /var/log/apache2/error.log
+vim bank_recon.py
+ls
+cd ../html/upload
+ls
+tail -f /var/log/apache2/error.log
+vim bank_recon.py
+vim ../../cgi-bin/bank_recon.py
+ls
+ls -la
+vim ../../cgi-bin/bank_recon.py
+tail -f /var/log/apache2/error.log
+ls
+cd ..
+vim pronto.php 
+vim ../../cgi-bin/bank_recon.py
+cd ../cgi-bin/
+vim bank_recon.py
+cd ../html/upload
+ls
+cd ..
+vim pronto.php 
+cd ..
+cd cgi-bin/
+vim bank_recon.py
+cd ;;
+cd ..
+cd html/
+ls
+vim conciliacao.html 
+vim pronto.php 
+cat /root/html/pronto.php 
+vim pronto.php 
+tail -f /var/log/apache2/error.log
+vim pronto.php 
+vim index.php 
+vim conciliacao.html 
+cd upç
+cd upload
+ls
+rm DESPESAS-conciliada*
+cd ..
+ls
+cp -R * /root/
+cd /root/
+ls
+git status
+git add .
+git commit -m "conciliacao"
+git push origin master
+init 0
