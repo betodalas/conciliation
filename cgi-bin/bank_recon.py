@@ -264,16 +264,21 @@ time.sleep(2)
 print("finding matches...")
 time.sleep(2)
 count = 0  # keep track of matches found
-bankSheet["E1"].value = 'data'
+bankSheet["O1"].value = 'data'
+userSheet["O1"].value = 'data'
 bankSheet["H1"].value = 'Soma saída'
 e_counter = 2
 
-userSheet["E1"].value = 'Entrada Data'
-userSheet["F1"].value = 'Entrada Descricao'
-userSheet["G1"].value = 'Entrada Valor'
+userSheet["E1"].value = 'data'
+bankSheet["E1"].value = 'data'
+bankSheet["E1"].value = 'Valores que não bateram'
+bankSheet["E1"].value = 'Valores que não bateram'
 
 userSheet["H1"].value = 'Soma valores de saida'
 x_counter = 2
+
+z_counter = 2
+y_counter = 2
 date_style = NamedStyle(name='datetime', number_format='DD/MM/YYYY')
 
 data_set = set()
@@ -291,18 +296,12 @@ for row in range(2, userSheet.max_row + 1):
     for x in trio3:
         if '-' not in trio3:
             # create new sheet
-            DatesObject1 = userSheet["G" + str(x_counter)]
-            DatesObject1.value = campo_valor
-            DatesObject2 = userSheet["E" + str(x_counter)]
-            DatesObject2.value = campo_data
-            DatesObject3 = userSheet["F" + str(x_counter)]
-            DatesObject3.value = campo_desc
 
             if campo_valor not in data_set2:
-                DatesObject1 = userSheet["G" + str(x_counter)]
-                DatesObject1.value = campo_valor
+                DatesObject1 = userSheet["G" + str(z_counter)]
+                DatesObject1.style = highlight3
 
-                x_counter += 1
+                z_counter += 1
                 data_set2.add(campo_valor)
 
 
@@ -316,6 +315,8 @@ for row in range(2, userSheet.max_row + 1):
    # same as above for every record on column C of the excel file
 
     trio = (DtcellObject.value, reset(AmcellObject.value))
+    campo_valor = AmcellObject.value
+    campo_data = DtcellObject.value
 
     if trio in trios:
         print('Igual')
@@ -328,19 +329,30 @@ for row in range(2, userSheet.max_row + 1):
 
     else:
 
+        DatesObject2 = userSheet["P" + str(z_counter)]
+        DatesObject2.value = campo_valor
+        DatesObject3 = userSheet["O" + str(z_counter)]
+        DatesObject3.value = campo_data
+        DatesObject3.style = date_style
+
         DtcellObject.style = highlight2
         #        ChcellObject.style = highlight
         AmcellObject.style = highlight2
-        count += 1
 
         trio3 = (str(AmcellObject.value))
-
+        z_counter += 1
         for x in trio3:
             if '-' not in trio3:
                 AmcellObject.style = highlight3
                 DtcellObject.style = highlight3
                 BmcellObject.style = highlight3
 
+        if campo_data not in data_set2:
+            DatesObject = userSheet["E" + str(y_counter)]
+            DatesObject.value = campo_data
+            DatesObject.style = date_style
+            y_counter += 1
+            data_set2.add(campo_data)
 
 for row in range(2, bankSheet.max_row + 1):
 
@@ -350,6 +362,8 @@ for row in range(2, bankSheet.max_row + 1):
     DtcellObject1.style = date_style
 
     trio2 = (DtcellObject1.value, reset(AmcellObject1.value))
+    campo_valor = AmcellObject1.value
+    campo_data = DtcellObject1.value
 
     if trio2 in trios2:
         DtcellObject1.style = highlight
@@ -359,12 +373,18 @@ for row in range(2, bankSheet.max_row + 1):
 
 
     else:
+
+        DatesObject5 = bankSheet["P" + str(x_counter)]
+        DatesObject5.value = campo_valor
+        DatesObject6 = bankSheet["O" + str(x_counter)]
+        DatesObject6.value = campo_data
+        DatesObject6.style = date_style
+
         DtcellObject1.style = highlight2
         #        ChcellObject.style = highlight
         AmcellObject1.style = highlight2
-        AmcellObject1 = AmcellObject1.value
-        print(str(DtcellObject1.value))
-        campo_data = DtcellObject1.value
+        x_counter += 1
+
         # book = openpyxl.load_workbook('conciliacao.xlsx')
         # wb = openpyxl.Workbook()
 
@@ -394,7 +414,8 @@ print("SUCCESS:" + str(count) + " matches highlighted")
 time.sleep(1)
 print("creating new file in your folder....")
 time.sleep(1)
-bankSheet['F2'] = "=SUMIFS($C$2:$C$10000,$A$2:$A$10000,E2)"
+bankSheet['F2'] = "=SUMIFS($P$2:$P$10000,$O$2:$O$10000,E2)"
+userSheet['F2'] = "=SUMIFS($P$2:$P$10000,$O$2:$O$10000,E2)"
 
 bankSheet['H2'] = "=SUM(C2:C1000)"
 

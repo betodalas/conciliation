@@ -1442,3 +1442,121 @@ git add .
 git commit -m "conciliacao"
 git push origin master
 init 0
+cd /var/www/cgi-bin/
+vim bank_recon.py
+tail -f /var/log/apache2/error.log
+tail -f /var/log/apache2/access.log 
+cd ..
+cd html/upload
+ls
+cd ..
+cd cgi-bin/
+python3 bank_recon.py
+tail -f /var/log/syslog
+tail -f /var/log/apache2/error.log
+vim bank_recon.py
+vim conciliacao.xlsx 
+vim ../html/conciliacao.xlsx 
+vim ../html/conciliacao.html 
+cat bank_recon.pyq
+vim ../html/conciliacao.html 
+pwd
+vim ../html/conciliacao.html 
+tail -f /var/log/apache2/error.log
+vim ../html/conciliacao.html 
+cd ..
+cd html/upload
+ls -la
+cat teste2.xlsx 
+62;c62;c
+ls
+ls -la
+cd ..
+cd cgi-bin/
+vim bank_recon.py
+cd ..
+cd html/
+vim pronto.php 
+cd ../cgi-bin/
+ls
+rm DESPESAS.xlsx 
+ls
+vim bank_recon.py
+lls
+ls
+ls -la
+ls
+cd ..
+ls
+cd html/
+ls
+rm DESPESAS.xlsx 
+vim upload.php 
+ls
+vim pronto.php 
+ls
+cd ..
+cp -R * /root/
+cd /root/
+ls
+rm conciliacao.xlsx 
+git add .
+git commit -m "conciliacao"
+git push origin master
+ls
+cd html/upload
+ls
+rm *.xlsx
+ls
+git add .
+git commit -m "conciliacao"
+git push origin master
+init 0
+cd /var/www/
+ls
+cd html/
+ls
+cd /var/www/
+ls
+cd cgi-bin/
+vim bank_recon.py
+init 0
+cd /var/www/
+ls
+cd cgi-bin/
+ls
+vim bank_recon.py
+cp bank_recon.py bank_recon.py.old
+vim bank_recon.py
+rm bank_recon.py
+mv bank_recon.py.old bank_recon.py
+cp bank_recon.py bank_recon.py.old
+vim bank_recon.py
+rm bank_recon.py
+mv bank_recon.py.old bank_recon.py
+vim bank_recon.py 
+cp bank_recon.py bank_recon.py.old
+vim bank_recon.py 
+tail -f /var/log/apache2/error.log
+vim bank_recon.py 
+tail -f /var/log/apache2/error.log
+rm bank_recon.py
+mv bank_recon.py.old bank_recon.py
+cp bank_recon.py bank_recon.py.old
+vim bank_recon.py 
+rm bank_recon.py
+mv bank_recon.py.old bank_recon.py
+vim bank_recon.py 
+cp bank_recon.py bank_recon.py.old
+vim bank_recon.py 
+vim bank_recon.py.old 
+vim bank_recon.py
+vim bank_recon.py.old 
+vim bank_recon.py
+vim bank_recon.py.old 
+vim bank_recon.py
+cd /var/www/cgi-bin/
+ls
+vim bank_recon.py
+shutdown 
+init 0
