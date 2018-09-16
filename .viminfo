@@ -8,12 +8,12 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/G
+~MSle0~/H
 
 # Command Line History (newest to oldest):
-:x!
 :x
 :q
+:x!
 :q!
 :317
 :Q
@@ -63,6 +63,7 @@
 :chq
 
 # Search String History (newest to oldest):
+?/H
 ?/G
 ?/data_set
 ?/data
@@ -112,7 +113,6 @@
 ?/teste
 ?/tste
 ?/uplo
-?/upload
 
 # Expression History (newest to oldest):
 
@@ -143,18 +143,23 @@
 	c
 
 # File marks:
-'0  275  48  /var/www/cgi-bin/bank_recon.py
-'1  350  37  /var/www/cgi-bin/bank_recon.py
-'2  93  25  /var/www/cgi-bin/bank_recon.py
-'3  320  0  /var/www/cgi-bin/bank_recon.py
-'4  351  46  /var/www/cgi-bin/bank_recon.py
-'5  312  16  /var/www/cgi-bin/bank_recon.py
-'6  353  41  /var/www/cgi-bin/bank_recon.py
-'7  354  12  /var/www/cgi-bin/bank_recon.py
-'8  268  3  /var/www/cgi-bin/bank_recon.py
-'9  302  29  /var/www/cgi-bin/bank_recon.py
+'0  93  67  /var/www/html/index.php
+'1  96  217  /var/www/html/index.php
+'2  275  48  /var/www/cgi-bin/bank_recon.py
+'3  350  37  /var/www/cgi-bin/bank_recon.py
+'4  93  25  /var/www/cgi-bin/bank_recon.py
+'5  320  0  /var/www/cgi-bin/bank_recon.py
+'6  351  46  /var/www/cgi-bin/bank_recon.py
+'7  312  16  /var/www/cgi-bin/bank_recon.py
+'8  353  41  /var/www/cgi-bin/bank_recon.py
+'9  354  12  /var/www/cgi-bin/bank_recon.py
 
 # Jumplist (newest first):
+-'  93  67  /var/www/html/index.php
+-'  1  0  /var/www/html/index.php
+-'  96  217  /var/www/html/index.php
+-'  111  0  /var/www/html/index.php
+-'  95  33  /var/www/html/index.php
 -'  275  48  /var/www/cgi-bin/bank_recon.py
 -'  264  0  /var/www/cgi-bin/bank_recon.py
 -'  1  0  /var/www/cgi-bin/bank_recon.py
@@ -247,10 +252,113 @@
 -'  294  23  /var/www/cgi-bin/bank_recon.py
 -'  292  24  /var/www/cgi-bin/bank_recon.py
 -'  290  10  /var/www/cgi-bin/bank_recon.py
--'  289  10  /var/www/cgi-bin/bank_recon.py
--'  288  67  /var/www/cgi-bin/bank_recon.py
 
 # History of marks within files (newest to oldest):
+
+> /var/www/html/index.php
+	"	93	67
+	^	93	68
+	.	99	128
+	+	269	5
+	+	269	0
+	+	269	6
+	+	271	1
+	+	271	1
+	+	271	1
+	+	271	0
+	+	269	0
+	+	269	0
+	+	264	0
+	+	265	6
+	+	264	42
+	+	265	16
+	+	269	0
+	+	269	43
+	+	264	19
+	+	269	44
+	+	265	16
+	+	267	7
+	+	266	53
+	+	269	0
+	+	265	17
+	+	263	30
+	+	262	10
+	+	264	53
+	+	199	21
+	+	199	7
+	+	199	0
+	+	199	33
+	+	199	0
+	+	199	0
+	+	199	0
+	+	199	0
+	+	199	0
+	+	199	0
+	+	199	84
+	+	199	0
+	+	199	0
+	+	199	46
+	+	199	0
+	+	199	0
+	+	197	7
+	+	90	33
+	+	87	0
+	+	91	0
+	+	114	0
+	+	91	0
+	+	91	0
+	+	91	0
+	+	108	0
+	+	116	0
+	+	125	0
+	+	1	0
+	+	143	0
+	+	199	0
+	+	115	0
+	+	89	41
+	+	90	32
+	+	194	25
+	+	91	2
+	+	90	47
+	+	91	23
+	+	92	8
+	+	91	26
+	+	95	0
+	+	93	6
+	+	94	6
+	+	95	6
+	+	93	62
+	+	94	70
+	+	93	66
+	+	94	75
+	+	95	136
+	+	92	88
+	+	95	160
+	+	92	88
+	+	95	104
+	+	92	82
+	+	93	59
+	+	94	67
+	+	95	170
+	+	194	0
+	+	95	170
+	+	95	68
+	+	95	173
+	+	95	0
+	+	96	144
+	+	96	132
+	+	95	115
+	+	97	211
+	+	96	6
+	+	97	6
+	+	98	134
+	+	99	127
+	+	95	50
+	+	96	252
+	+	97	212
+	+	96	243
+	+	98	126
+	+	99	128
 
 > /var/www/cgi-bin/bank_recon.py
 	"	275	48
@@ -634,111 +742,6 @@
 	+	79	20
 	+	1	0
 	+	79	23
-
-> /var/www/html/index.php
-	"	98	128
-	^	98	129
-	.	99	127
-	+	279	0
-	+	326	0
-	+	274	11
-	+	263	0
-	+	269	38
-	+	269	20
-	+	269	5
-	+	269	0
-	+	269	6
-	+	271	1
-	+	271	1
-	+	271	1
-	+	271	0
-	+	269	0
-	+	269	0
-	+	264	0
-	+	265	6
-	+	264	42
-	+	265	16
-	+	269	0
-	+	269	43
-	+	264	19
-	+	269	44
-	+	265	16
-	+	267	7
-	+	266	53
-	+	269	0
-	+	265	17
-	+	263	30
-	+	262	10
-	+	264	53
-	+	199	21
-	+	199	7
-	+	199	0
-	+	199	33
-	+	199	0
-	+	199	0
-	+	199	0
-	+	199	0
-	+	199	0
-	+	199	0
-	+	199	84
-	+	199	0
-	+	199	0
-	+	199	46
-	+	199	0
-	+	199	0
-	+	197	7
-	+	90	33
-	+	87	0
-	+	91	0
-	+	114	0
-	+	91	0
-	+	91	0
-	+	91	0
-	+	108	0
-	+	116	0
-	+	125	0
-	+	1	0
-	+	143	0
-	+	199	0
-	+	115	0
-	+	89	41
-	+	90	32
-	+	194	25
-	+	91	2
-	+	90	47
-	+	91	23
-	+	92	8
-	+	91	26
-	+	95	0
-	+	93	6
-	+	94	6
-	+	95	6
-	+	93	62
-	+	94	70
-	+	93	66
-	+	94	75
-	+	95	136
-	+	92	88
-	+	95	160
-	+	92	88
-	+	95	104
-	+	92	82
-	+	93	59
-	+	94	67
-	+	95	170
-	+	194	0
-	+	95	170
-	+	95	68
-	+	95	173
-	+	95	0
-	+	96	144
-	+	96	132
-	+	95	115
-	+	97	211
-	+	96	6
-	+	97	6
-	+	98	134
-	+	99	127
 
 > ../../cgi-bin/bank_recon.py
 	"	1	0

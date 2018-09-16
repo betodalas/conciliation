@@ -1560,3 +1560,24 @@ ls
 vim bank_recon.py
 shutdown 
 init 0
+cd /var/www/
+ls
+cd cgi-bin/
+vim bank_recon.py
+cd ..
+ls
+cp -R * /root/
+cd /root/
+ls
+git add .
+git commit -m "conciliacao"
+cd html/upload
+ls
+rm *
+ls
+cd ..
+git add .
+git commit -m "conciliacao"
+git push origin master
+ls
+init 0
